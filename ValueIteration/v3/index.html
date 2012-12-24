@@ -1,0 +1,54 @@
+<html>
+		<title>Value Iteration</Title>
+		<link href="bootstrap.css" rel="stylesheet">
+		
+		<div class="navbar navbar-top">
+				<div class="navbar-inner">
+						<div class="span12">
+								<a class="brand">Value Iteration</a>
+						</div>
+				</div>
+		</div>
+		
+		<div class="span12">
+				<div class "row">
+					<p>Below is a graph representing the value iteration computation. Fill in the \(V_i^*\)-values and the \(Q_i^*\)-values in all layers based on the MDP model shown on the right and using \(\gamma=1\) (i.e., no discounting). As a reminder, the maximizer nodes are the \(V_i^*\) nodes, with \(i\) being the number of time-steps remaining. The chance nodes are the \(Q_i^*\) nodes, with \(i\) being the number of time-steps remaining. See lecture slides on MDPs for more specifics. The box that shows up at the bottom for your entry will process basic arithmetic expressions for you!</p>
+				<div class="row">
+					<div id="paper1" class="span6"></div>
+					<div id="right" class="span6" style="padding-top: 50px;">
+						<div id="keypaper" class="span6" style="padding-left:100px;"></div>
+						<div id="keypaper2" class="span6"></div>
+						<div id="markovmodel" class="span6" style="padding-top:10px;"></div>
+						<div class="btn-group" style="padding-top:10px; padding-left:170px;">
+								<button class="btn1" id="submitbutton">Submit</button>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <div id="correctDiagram" class="span6"></div>
+                    <div id="answerboxes" class="span12" style="padding-left: 115px;">
+                        <input type="hidden" value="" id="v1" />
+                        <input type="hidden" value="" id="v2" />
+                        <input type="hidden" value="" id="v3" />
+                        <input type="hidden" value="" id="v4" />
+                        <input type="hidden" value=""  id="v5" />
+                        <input type="hidden" value=""  id="v6" />
+                        
+                        <input type="hidden" value=""  id="q1" />
+                        <input type="hidden" value=""  id="q2" />
+                        <input type="hidden" value=""  id="q3" />
+                        <input type="hidden" value=""  id="q4" />
+                        <input type="hidden" value=""  id="q5" />
+                        <input type="hidden" value=""  id="q6" />
+                        <input type="hidden" value=""  id="q7" />
+                        <input type="hidden" value=""  id="q8" />
+                    </div>
+                </div>
+		</div>
+        
+		<script type="text/javascript" src="raphael.js"></script>
+		<script type="text/javascript" src="ValueIteration.js"></script>
+		<script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+</html>
+
