@@ -1,0 +1,14 @@
+var keypaper = Raphael("keypaper", 200, 65);
+getTriangle(keypaper, 50, 3, 55, 80).attr({"stroke": "#00f", "stroke-width":3, "fill":"none"});
+keypaper.text(50, 38, "A").attr("font-size", 18);
+getTriangle(keypaper, 150, 3, 55, 80).attr({"stroke":"#f0f", "stroke-width":3, "fill":"none"});
+keypaper.text(150, 38, "B").attr("font-size", 18);
+var keypaper2 = Raphael("keypaper2", 400, 65);
+keypaper2.circle(50,33, 30).attr({"stroke":"#00f", "stroke-width": 3,});
+keypaper2.text(50, 33, "Q(A,0)").attr("font-size", 18);
+keypaper2.circle(150, 33, 30).attr({"stroke":"#00f", "stroke-width": 3, "fill":"#00f", "fill-opacity":0.5});
+keypaper2.text(150, 33, "Q(A,1)").attr("font-size", 18);
+keypaper2.circle(250, 33, 30).attr({"stroke":"#f0f", "stroke-width": 3});
+keypaper2.text(250, 33, "Q(B,0)").attr("font-size", 18);
+keypaper2.circle(350, 33, 30).attr({"stroke":"#f0f", "stroke-width":3, "fill":"#f0f", "fill-opacity":0.5});
+keypaper2.text(350, 33, "Q(B,1)").attr("font-size", 18);
