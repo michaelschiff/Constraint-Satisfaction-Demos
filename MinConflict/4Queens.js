@@ -28,7 +28,7 @@ var button;
 		superPositions = [positions0, positions1, positions2, positions3];
 		//initialize paper and board
 		paper = Raphael("paper", 364, 366);
-		paper.image("board.png", 0, 0, 364, 366);
+		paper.image("/Users/michaelschiff/Documents/Programming_Projects/CSPDemos/include/images/board.png", 0, 0, 364, 366);
 		//define queen class
 		function queen(col, drawToggle) {
 				this.id = col;
@@ -36,7 +36,7 @@ var button;
 				this.pos = this.positions[0];
 				this.img = null;
 				if (drawToggle) { 
-						this.img = paper.image("queen.png", 8, 12, 80, 80).attr(this.pos); 
+						this.img = paper.image("/Users/michaelschiff/Documents/Programming_Projects/CSPDemos/include/images/queen.png", 8, 12, 80, 80).attr(this.pos); 
 						this.img.node.id = "queen"+queen.id;
 				}
 		}
